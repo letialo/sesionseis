@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Electrónica Básica - Interfaz Sencilla</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Electrónica Básica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
-      padding: 1rem;
-      background: #fff;
-      color: #000;
+      padding: 0;
+      background-color: #f5f5f5;
     }
-    h1 {
-      font-size: 1.5rem;
-      margin: 0 0 1rem 0;
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
     }
     ul {
-      padding-left: 1.2rem;
+      margin: 0 0 1rem 1.5rem;
     }
     code {
-      background: #f0f0f0;
+      background: #eef;
       padding: 0.2em 0.4em;
       border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>Electrónica Básica</h1>
-  <ul>
-    <li><strong>Voltaje</strong> (V) – la fuerza que mueve a los electrones</li>
-    <li><strong>Corriente</strong> (I) – flujo de carga, en amperios (A)</li>
-    <li><strong>Resistencia</strong> (R) – oposición al flujo, en ohmios (Ω)</li>
-    <li>Ley de Ohm: <code>V = I · R</code></li>
-  </ul>
+  <header>
+    <h1>Electrónica Básica</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Conceptos clave</h2>
+      <ul>
+        <li><strong>Voltaje</strong> (V): la fuerza que mueve a los electrones.</li>
+        <li><strong>Corriente</strong> (I): flujo de carga eléctrica, se mide en amperios (A).</li>
+        <li><strong>Resistencia</strong> (R): oposición al flujo de corriente, medida en ohmios (Ω).</li>
+        <li><strong>Ley de Ohm</strong>: <code>V = I · R</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ejemplo simple: circuito de LED</h2>
+      <p>Un LED necesita una resistencia para limitar la corriente. A modo ilustrativo:</p>
+      <pre><code>Fuente de 5V ---|>|--- Resistencia (330 Ω) --- Tierra</code></pre>
+      <p>Si la caída de voltaje del LED es aproximadamente 2V, la corriente sería:</p>
+      <p><code>I ≈ (5V - 2V) / 330Ω ≈ 9 mA</code></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Electrónica Básica
+  </footer>
 </body>
 </html>
