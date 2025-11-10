@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico 3 - Posicionamiento CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .contenedor {
+            width: 100%;
+            background-color: #fff;
+            border: 3px solid #333;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .caja1 {
+            width: 200px;
+            height: 150px;
+            background-color: #ff6b6b;
+            border: 4px solid #c92a2a;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .caja2 {
+            width: 250px;
+            height: 200px;
+            background-color: #4ecdc4;
+            border: 4px dashed #0a9f96;
+            margin: 30px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .caja3 {
+            width: 300px;
+            height: 120px;
+            background-color: #ffd93d;
+            border: 4px dotted #f39c12;
+            margin: 40px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .instrucciones {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            border-radius: 5px;
+        }
+
+        .instrucciones h2 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+
+        .instrucciones ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio Práctico 3 - Posicionamiento CSS</h1>
+    
+    <div class="instrucciones">
+        <h2>Objetivo del Ejercicio:</h2>
+        <ul>
+            <li>Crear 3 divs con distinto tamaño</li>
+            <li>Aplicar diferentes colores de fondo y bordes</li>
+            <li>Usar la propiedad <code>margin</code> para separar y posicionar los elementos</li>
+        </ul>
+    </div>
+
+    <div class="contenedor">
+        <div class="caja1">Caja 1<br>200x150px</div>
+        <div class="caja2">Caja 2<br>250x200px</div>
+        <div class="caja3">Caja 3<br>300x120px</div>
+    </div>
+
+</body>
+</html>
