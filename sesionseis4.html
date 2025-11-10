@@ -1,135 +1,77 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>Electrónica Básica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejemplo de CSS</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #23ebf1;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
     }
-    h1 {
-      color: rgb(0, 0, 0); margin: 100px;
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
     }
-    p {
-      color: #e45dd2; font-size: 20px;
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .caja1 {
-            background-color: yellow; margin: 50px; padding: 30px; 
-            width: 200px }
-
-    .caja2 {
-            background-color: rgb(12, 245, 90); margin: 50px; padding: 30px; 
-            width: 200px }
-
-    .caja3 { 
-            background-color: rgb(12, 140, 245);  padding: 30px; 
-            width: 50%; margin: 0 auto }
-
-    .caja4 {
-            background-color: rgb(129, 120, 214); margin: 10px; padding: 30px; 
-            width: 200px }
-
-    .caja5 {
-            background-color: rgb(245, 163, 12); margin: 50px; padding: 30px; 
-            width: 200px }
-
-    .caja6 {
-            background-color: rgb(211, 98, 104); margin: 50px; padding: 30px; 
-            width: 200px }
-
+    h1, h2 {
+      color: #333;
+    }
+    ul {
+      margin: 0 0 1rem 1.5rem;
+    }
+    code {
+      background: #eef;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9em;
+    }
   </style>
-
 </head>
 <body>
+  <header>
+    <h1>Electrónica Básica</h1>
+  </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+  <main>
+    <section>
+      <h2>Conceptos clave</h2>
+      <ul>
+        <li><strong>Voltaje</strong> (V): la fuerza que mueve a los electrones.</li>
+        <li><strong>Corriente</strong> (I): flujo de carga eléctrica, se mide en amperios (A).</li>
+        <li><strong>Resistencia</strong> (R): oposición al flujo de corriente, medida en ohmios (Ω).</li>
+        <li><strong>Ley de Ohm</strong>: <code>V = I · R</code></li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    </section>
 
+    <section>
+      <h2>Ejemplo simple: circuito de LED</h2>
+      <p>Un LED necesita una resistencia para limitar la corriente. A modo ilustrativo:</p>
+      <pre><code>Fuente de 5V ---|>|--- Resistencia (330 Ω) --- Tierra</code></pre>
+      <p>Si la caída de voltaje del LED es aproximadamente 2V, la corriente sería:</p>
+      <p><code>I ≈ (5V - 2V) / 330Ω ≈ 9 mA</code></p>
+    </section>
+  </main>
 
-<nav class="navbar bg-body-tertiary">
-  <form class="container-fluid">
-    <div class="input-group">
-      <span class="input-group-text" id="basic-addon1">@</span>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
-    </div>
-  </form>
-</nav>
-
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <!-- Navbar content -->
-</nav>
-
-<nav class="navbar bg-primary" data-bs-theme="dark">
-  <!-- Navbar content -->
-</nav>
-
-<nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light">
-  <!-- Navbar content -->
-</nav>
-
-
-
-
-  <div class="caja1">
-        <h1>Flores</h1>
-        <p>Este es un párrafo con texto azul y tamaño de fuente de 16 píxeles.</p>
-        <div class="caja2">
-            <p>Esta es una caja con fondo amarillo, relleno de 15 píxeles y borde negro de 2 píxeles.</p>
-        </div>
-    </div>
-
-    <div class="caja3">
-      <h2> Flor de loto</h2>
-    </div>
-
-
-  
-  <div class="caja4">
-  <p>Este es un flor de loto rosa.</p>
-  </div>
-
-  <div class="caja5"
-  <img src="lotus.jpg" alt="Descripción de la imagen 1" width="200" height = "200">
-  <p>Este es otro párrafo estilizado con CSS.</p>
-  </div>
-
-  <div class="caja6"
-  <p> Y otro párrafo más.</p>
-  </div>
+  <footer>
+    © 2025 Electrónica Básica
+  </footer>
 </body>
 </html>
